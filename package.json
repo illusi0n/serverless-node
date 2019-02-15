@@ -1,10 +1,10 @@
 {
-  "name": "pizza-api",
+  "name": "pizza-rest-api",
   "version": "1.0.0",
   "description": "Learning AWS with Nodejs while going through [Serverless Applications with Nodejs](https://www.manning.com/books/serverless-applications-with-node-js).",
-  "main": "api.js",
+  "main": "pizzaApi.js",
   "scripts": {
-    "create": "claudia create --region eu-central-1 --api-module api",
+    "create": "claudia create --region eu-central-1 --api-module pizzaApi",
     "update": "claudia update"
   },
   "repository": {
@@ -19,6 +19,11 @@
   "homepage": "https://github.com/illusi0n/serverless-node#readme",
   "devDependencies": {
     "claudia": "^5.4.0",
+    "claudia-api-builder": "^4.1.2",
+    "claudia-bot-builder": "^4.5.0"
+  },
+
+  "dependencies": {
     "claudia-api-builder": "^4.1.2",
     "claudia-bot-builder": "^4.5.0"
   }
