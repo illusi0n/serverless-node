@@ -1,0 +1,23 @@
+{
+  "name": "pizza-api",
+  "version": "1.0.0",
+  "description": "Learning AWS with Nodejs while going through [Serverless Applications with Nodejs](https://www.manning.com/books/serverless-applications-with-node-js).",
+  "main": "api.js",
+  "scripts": {
+    "create": "claudia create --region eu-central-1 --api-module api",
+    "update": "claudia update"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/illusi0n/serverless-node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/illusi0n/serverless-node/issues"
+  },
+  "homepage": "https://github.com/illusi0n/serverless-node#readme",
+  "devDependencies": {
+    "claudia": "^5.4.0"
+  }
+}
