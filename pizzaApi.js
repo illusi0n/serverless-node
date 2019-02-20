@@ -6,6 +6,7 @@ const pizzaApi = new Api();
 const getPizzas = require('./handlers/get-pizzas');
 const createOrder = require('./handlers/create-order');
 const deleteOrder = require('./handlers/delete-order');
+const updateOrder = require('./handlers/update-order');
 
 const PIZZA_ENDPOINT = '/pizzas';
 const ORDER_ENDPOINT = '/orders';
@@ -35,5 +36,13 @@ pizzaApi.delete(`${ORDER_ENDPOINT}/{id}`,
     error: 400
   }
 );
+
+pizzaApi.put(`${ORDER_ENDPOINT}/{id}`,
+  request => updateOrder(request.pathParams.id, request.body),
+  {
+    success: 200,
+    error: 400
+  }
+)
 
 module.exports = pizzaApi;
