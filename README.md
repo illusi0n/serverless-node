@@ -8,4 +8,4 @@ Learning AWS with Nodejs while going through [Serverless Applications with Nodej
 Before running `curl` on Windows execute in PowerShell : `Remove-item alias:curl`.
 For specifying data in `curl` , `"` has to be escaped, eg. `POST -d '{\"pizzaId\":\"1\", \"address\": \"Address 1\"}'`
 
-Currently I could not find a solution to run in `cmd` successfully POST request with data in body successfully.
+Currently I can't find a solution to run in `cmd` POST request with data in body successfully.
