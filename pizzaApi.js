@@ -50,4 +50,12 @@ pizzaApi.put(`${ORDER_ENDPOINT}/{id}`,
   }
 )
 
+pizzaApi.get('/', request => {
+  return new Promise( (resolve, reject) => {
+    setTimeout(() => {
+      resolve('Hello after 2seconds.');
+    }, 2000);
+  });
+});
+
 module.exports = pizzaApi;
